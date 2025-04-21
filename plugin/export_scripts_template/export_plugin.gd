@@ -34,9 +34,9 @@ class AndroidExportPlugin extends EditorExportPlugin:
 	func _get_android_dependencies(platform, debug):
 		# TODO: Add remote dependices here.
 		if debug:
-			return PackedStringArray([])
+			return PackedStringArray(["androidx.activity:activity-ktx:1.2.0", "androidx.fragment:fragment-ktx:1.2.0", "androidx.core:core:1.13.1", "com.google.android.gms:play-services-fitness:21.2.0"])
 		else:
-			return PackedStringArray([])
+			return PackedStringArray(["androidx.activity:activity-ktx:1.2.0", "androidx.fragment:fragment-ktx:1.2.0", "androidx.core:core:1.13.1", "com.google.android.gms:play-services-fitness:21.2.0"])
 
 	func _get_name():
 		return _plugin_name

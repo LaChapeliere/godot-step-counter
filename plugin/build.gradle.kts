@@ -40,6 +40,12 @@ android {
 dependencies {
     implementation("org.godotengine:godot:4.3.0.stable")
     // TODO: Additional dependencies should be added to export_plugin.gd as well.
+    implementation("androidx.activity:activity-ktx:1.2.0")
+    implementation("androidx.fragment:fragment-ktx:1.2.0")
+    implementation("androidx.core:core:1.13.1")
+    implementation("com.google.android.gms:play-services-fitness:21.2.0")
+
+
 }
 
 // BUILD TASKS DEFINITION
